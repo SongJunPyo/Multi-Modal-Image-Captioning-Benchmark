@@ -1,10 +1,10 @@
-# 📸 Image Captioning: From Vision Encoders to LLMs
+# Image Captioning: From Vision Encoders to LLMs
 
 본 프로젝트는 이미지에서 시각적 정보를 추출하여 자연어 문장으로 설명하는 **이미지 캡셔닝(Image Captioning)** 태스크를 수행하기 위해, 전통적인 Vision Encoder 기반 모델부터 최신 LLM 및 VLM 활용 방식까지 단계적으로 구현하고 비교 분석한 연구입니다.
 
 ---
 
-## 🚀 프로젝트 개요
+## 프로젝트 개요
 이미지 캡셔닝 연구 흐름에 따라 총 3가지 접근 방향을 설정하여 실험을 진행했습니다:
 
 1.  **Approach (1): Vision Encoder 기반 캡셔닝**
@@ -19,7 +19,7 @@
 
 ---
 
-## 🏆 최종 모델: ViT-Base + GPT-2
+## 최종 모델: ViT-Base + GPT-2
 다양한 실험 결과, **Vision Transformer(ViT)**의 전역적 특징 추출 능력과 사전 학습된 **GPT-2**의 풍부한 언어 지식을 결합한 모델이 가장 우수한 성능을 보였습니다.
 
 ### 모델 구조 
@@ -36,7 +36,7 @@
 
 ---
 
-## 💻 설치 및 실행 방법
+## 설치 및 실행 방법
 
 ### 1. 환경 설정
 ```bash
@@ -63,7 +63,7 @@ python main_ViT_GPT2.py
 
 ---
 
-## 📊 가설 검증 결과
+## 가설 검증 결과
 
 * H1: ViT + Transformer 디코더가 CNN+LSTM보다 우수하다 (채택)
 * H2: LLM 결합 모델이 더 자연스러운 문장을 생성한다 (부분 채택) - 의미 전달 품질은 향상되었으나 정량 지표 개선은 제한적
@@ -71,7 +71,7 @@ python main_ViT_GPT2.py
 
 ---
 
-## 📜 참고 문헌
+## 참고 문헌
 * Deep Residual Learning for Image Recognition (ResNet)
 * Show, Attend and Tell: Visual Attention 기반 캡션 생성
 * LLaVA: Visual Instruction Tuning
